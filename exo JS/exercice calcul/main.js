@@ -9,3 +9,6 @@ unCompteur/2;
 console.log(unCompteur)
 
 console.log(10*41+(1-4)/78)
+
+let puissance = 2**10
+console.log(puissance)
