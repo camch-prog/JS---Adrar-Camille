@@ -9,8 +9,8 @@ let villeClient = "Toulouse";
 let listePizza = ["Margarita", "Pepperoni", "Suprême","Reine"]
 let pizzaCommandee= listePizza[(getRandomInt(4))];
 let tempsLivraison = 30;
-let messageSuprise = `Qu'est qu'une pizza dit à une autre pizza qui lui demandait des conseils ? "Suis ta pâte et tout ira bien !"`
-
+let messageSuprise = `Qu'est qu'une pizza dit à une autre pizza qui lui demandait des conseils ? "Suis ta pâte et tout ira bien !"`;
+let dateDuJour1 = new Date();
 
 let SumUpOrderPhrase = `${dateDuJour}:\n
 Bonjour, ${nomClient} ,votre pizza ${pizzaCommandee} est en cours de préparation.\n
@@ -19,4 +19,4 @@ Elle vous sera livrée d'ici ${tempsLivraison} minutes à l'adresse : ${adresseC
 ${messageSuprise}`;
 
 console.log(SumUpOrderPhrase);
-
+console.log(dateDuJour1);
