@@ -8,4 +8,4 @@ function calculerMoyenne(tableauDeNote){
     }
     return sommeNotes/n
 } 
-console.log(calculerMoyenne(notesTibo));
+console.log("La moyenne des notes de Tibo est : "+calculerMoyenne(notesTibo));
