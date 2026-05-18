@@ -16,3 +16,9 @@ function calculMoy(notes){
 }
 let notes = [5,18];
 calculMoy(notes)
+
+let car = "renault";
+if(car=== "renault"){
+    let speed = 100
+}
+console.log(speed)
