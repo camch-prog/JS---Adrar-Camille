@@ -53,5 +53,41 @@
         arrayQuatre.map((x,y)=> x.innerHTML =  (y+1) + " - "+ x.innerHTML)
     </script>
 <!-- EXERCICE 5 -->
+    <button>Changer</button>
+    <p>Hello</p>
+    <script>
+        let bouton = document.getElementsByTagName("button")[0];
+        bouton.addEventListener('click', () => {
+            let paragraph = document.getElementsByTagName("p")[12];
+            paragraph.innerHTML = "clicked!"
+        })
+    </script>
+<!-- EXERCICE 6 -->
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <script>
+        let paragraphSix = document.getElementsByTagName("p");
+        let arraySix = Array.from(paragraphSix);
+        arraySix.map((x, y)=>{
+            if(y % 2===0){
+                x.classList.add("red")
+            }
+            else{
+                x.classList.add('blue')
+            }
+        })
+    </script>
+<!-- EXERCICE 7 -->
+    <ul>
+        <li>Coder</li>
+        <li>Manger</li>
+        <li>Dormir</li>
+    </ul>
+    <script>
+        let liste = document.getElementsByTagName("li");
+        
+    </script>
 </body>
 </html>

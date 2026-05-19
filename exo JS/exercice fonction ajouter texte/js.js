@@ -7,4 +7,4 @@ function ajouterTexte(pseudo, texte){
     paragraphe.innerHTML = paragraphe.innerHTML +" - " + texte;
     body.appendChild(paragraphe);
 }
-ajouterTexte("Jojolasticot", "Siuuuuuuuuuuuuu")
+ajouterTexte("Jojolasticot", "Siuuuuuuuuuuuuu");
