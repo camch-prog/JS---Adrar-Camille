@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 <!-- EXERCICE 1 -->
@@ -13,11 +13,45 @@
     <p>Bonjour</p>
     <p>Salut</p>
     <p>Bonsoir</p>
+
+    <script>
+            let paragraphs = document.getElementsByTagName("p");
+            let paragraphsArray = Array.from(paragraphs);
+            paragraphsArray.map((x)=> x.innerHTML ="🔥 " + x.innerHTML);
+    </script>
 <!-- EXERCICE 2 -->
     <p>skate</p>
     <p>surf</p>
     <p>snow</p>
 
+    <script>
+            let paragraphsDeux = document.getElementsByTagName("p")
+            let ArrayDeux = Array.from(paragraphsDeux);
+            ArrayDeux.map((x)=>x.innerHTML = x.innerHTML.toUpperCase())
+    </script>
 
+<!-- EXERCICE 3 -->
+    <p>Paris</p>
+    <p>Londres</p>
+    <p>Tokyo</p>
+
+    <script>
+        let pTrois = document.getElementsByTagName("p");
+        let arrayTrois = Array.from(pTrois);
+        arrayTrois.map((x)=>x.classList.add("highlight"));
+
+    </script>
+<!-- EXERCICE 4 -->
+    <p>Banane</p>
+    <p>Pomme</p>
+    <p>Orange</p>
+
+    <script>
+        let pQuatre =document.getElementsByTagName("p");
+        let arrayQuatre = Array.from(pQuatre);
+        console.log(arrayQuatre)
+        arrayQuatre.map((x,y)=> x.innerHTML =  (y+1) + " - "+ x.innerHTML)
+    </script>
+<!-- EXERCICE 5 -->
 </body>
 </html>

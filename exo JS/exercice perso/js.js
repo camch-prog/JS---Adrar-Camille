@@ -1,9 +1,7 @@
 // EXERCICE 1
-let paragraphs = document.getElementsByTagName("p");
-let paragraphsArray = Array.from(paragraphs);
 
-paragraphsArray.map((x)=> x.innerHTML ="🔥 " + x.innerHTML)
 
 // EXERCICE 2 
-
-
+    <p>skate</p>
+    <p>surf</p>
+    <p>snow</p>
