@@ -18,8 +18,7 @@ let truefalse = true
 let dark = document.getElementById("dark")
 let suppr = document.getElementById("suppr")
 let toggle = document.getElementById('toggle')
-let baliseImg = document.createElement("img")
-baliseImg.setAttribute("src", "https://picsum.photos/id/237/200/300" );
+
 
 dark.addEventListener("click",()=>{
     titre.classList.add("dark")})
@@ -36,9 +35,12 @@ toggle.addEventListener("click",()=>{
 document.addEventListener('click', (clickEvent) => {
     // let coordX =clickEvent.pageX;
     // let coordY =clickEvent.pageY;
+    let baliseImg = document.createElement("img")
+    baliseImg.setAttribute("src", "https://picsum.photos/id/237/200/300" );
     document.body.appendChild(baliseImg);
     baliseImg.style.position = "absolute";
     baliseImg.style.top=clickEvent.pageY+'px';
     baliseImg.style.left=clickEvent.pageX+'px';
+    baliseImg.style.transform = "translate(-50%, -50%)";
 });
 
