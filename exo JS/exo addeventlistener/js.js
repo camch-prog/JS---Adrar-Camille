@@ -1,5 +1,5 @@
 let titre = document.getElementsByTagName("h1")[0];
-let normal = false
+let normal = true
 titre.addEventListener("click",()=>{
     // if (normal === true){
     // titre.innerText = ":)"
@@ -13,15 +13,32 @@ titre.addEventListener("click",()=>{
     normal=!normal;
 })
 
-let truefalse = false
+let truefalse = true
 
 let dark = document.getElementById("dark")
 let suppr = document.getElementById("suppr")
 let toggle = document.getElementById('toggle')
+let baliseImg = document.createElement("img")
+baliseImg.setAttribute("src", "https://picsum.photos/id/237/200/300" );
+
 dark.addEventListener("click",()=>{
-    titre.classList='dark'})
+    titre.classList.add("dark")})
+
 suppr.addEventListener("click",()=>{
-    titre.classList.remove('dark')})
+    titre.classList.remove("dark")})
+
 toggle.addEventListener("click",()=>{
-    titre.classList= truefalse ? 'dark' : "";
-    truefalse=!truefalse;})
+    titre.classList.toggle('dark');
+    // titre.classList= truefalse ? 'dark' : "";
+    // truefalse=!truefalse;
+    })
+
+document.addEventListener('click', (clickEvent) => {
+    // let coordX =clickEvent.pageX;
+    // let coordY =clickEvent.pageY;
+    document.body.appendChild(baliseImg);
+    baliseImg.style.position = "absolute";
+    baliseImg.style.top=clickEvent.pageY+'px';
+    baliseImg.style.left=clickEvent.pageX+'px';
+});
+
