@@ -8,4 +8,4 @@ input.addEventListener("focus",()=>{
 input.addEventListener("blur", () => {
     input.style.background = "inherit";
     input.style.color ="inherit";
-});
+}); 
