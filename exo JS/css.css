@@ -1,0 +1,259 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --bg: #111827;
+  --bg-secondary: #1f2937;
+  --card: #1e293b;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --success: #10b981;
+  --neutral: #0f172a;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --radius: 18px;
+}
+
+/* BODY */
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  width: min(1200px, 92%);
+  margin: auto;
+}
+
+/* MAIN */
+main {
+  padding: 3rem 0;
+}
+
+/* TITRES */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* PARAGRAPHES */
+p {
+  color: var(--text-secondary);
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 3rem;
+}
+
+/* CARTES */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* VARIANTES */
+.bg-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.bg-neutral {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.text-primary-content,
+.text-neutral-content {
+  color: white;
+}
+
+/* TITRE CARD */
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+}
+
+/* CODE BLOCK */
+pre {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  border-radius: 14px;
+}
+
+.mockup-code {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 1.4rem;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  color: #93c5fd;
+  white-space: pre;
+}
+
+/* LISTES */
+ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* LIENS */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: white;
+}
+
+/* HERO */
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ESPACEMENTS */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* DRAWER */
+.drawer {
+  min-height: 100vh;
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* UTILITAIRES */
+.shadow-xl,
+.shadow-lg {
+  box-shadow: var(--shadow);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-lg {
+  font-size: 1.1rem;
+}
+
+.text-2xl {
+  font-size: 1.8rem;
+}
+
+.text-4xl {
+  font-size: 2.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  code {
+    font-size: 0.82rem;
+  }
+}
