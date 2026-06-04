@@ -1,5 +1,6 @@
 .dark {
-    color:red;
+    background-color:black;
+    color:white;
 }
 body{
     min-height : 100%;
